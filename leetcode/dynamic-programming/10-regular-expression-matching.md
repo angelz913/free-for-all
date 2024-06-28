@@ -10,21 +10,22 @@ Given an input string `s` and a pattern `p`, implement regular expression matchi
 The matching should cover the entire input string (not partial).
 
 Example 1:
-
-> Input: s = "aa", p = "a"
-> 
-> Output: false
+```
+Input: s = "aa", p = "a"
+Output: false
+```
 
 Example 2:
-
-> Input: s = "aa", p = "a*"
-> 
-> Output: true
+```
+Input: s = "aa", p = "a*"
+Output: true
+```
 
 Example 3:
-> Input: s = "ab", p = ".*"
-> 
-> Output: true
+```
+Input: s = "ab", p = ".*"
+Output: true
+```
 
 ### Idea
 - DP with memoization
