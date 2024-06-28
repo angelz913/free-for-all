@@ -1,6 +1,6 @@
 # 22. Generate Parentheses
 
-## Description
+### Description
 
 Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
  
@@ -19,7 +19,7 @@ Output: ["()"]
 Constraints:
 - `1 <= n <= 8`
 
-## Idea
+### Idea
 
 We keep track of:
 - The total number of `(` currently in `s`
@@ -27,7 +27,7 @@ We keep track of:
 
 Then, if the number of `(` equals the number of `)`, we can only add `(`. And if the number of `(` reaches `n`, we can only add `)`.  
 
-## C++ Solution
+### C++ Solution
 
 ```cpp
 class Solution {
