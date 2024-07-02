@@ -271,7 +271,7 @@ public:
 Given an integer `n`, return all the structurally unique BST's (binary search trees), which has exactly `n` nodes of unique values from `1` to `n`. Return the answer in any order.
 
 Example 1:
-![example](0095-example.png)
+![example](images/0095-example.png)
 
 ### C++ Solution
 
@@ -283,7 +283,7 @@ Given an integer `n`, return the number of structurally unique BST's (binary sea
 
 Example 1:
 
-![example](0096-example.png)
+![example](images/0096-example.png)
 
 ### C++ Solution
 
