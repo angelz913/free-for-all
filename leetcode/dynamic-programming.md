@@ -3,7 +3,7 @@
 ### Description
 
 Given `n` pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
- 
+
 Example 1:
 ```
 Input: n = 3
@@ -25,7 +25,7 @@ We keep track of:
 - The total number of `(` currently in `s`
 - The number of `)` minus the number of of `(` in `s`
 
-Then, if the number of `(` equals the number of `)`, we can only add `(`. And if the number of `(` reaches `n`, we can only add `)`.  
+Then, if the number of `(` equals the number of `)`, we can only add `(`. And if the number of `(` reaches `n`, we can only add `)`.
 
 ### C++ Solution
 
@@ -49,7 +49,6 @@ public:
             buildSolution(ans, s + "(", k + 1, l + 1, n);
             buildSolution(ans, s + ")", k - 1, l, n);
         }
-        
     }
 
     vector<string> generateParenthesis(int n) {
@@ -124,9 +123,9 @@ public:
         }
         // Store the answer
         dp[si][pi] = ans;
-        return ans;    
+        return ans;
     }
-    
+
     bool isMatch(string s, string p) {
         vector<vector<int>> dp(s.size() + 1, vector<int>(p.size() + 1, -1));
         dp[0][0] = 1;
@@ -164,7 +163,6 @@ public:
             }
         }
         return dp[nums.size() - 1];
-        
     }
 };
 ```
@@ -177,7 +175,7 @@ Not efficient
 
 ### Idea
 
-Start from the last index and keep updating the `goal`. In the end, `goal == 0` indicates that we find a path. 
+Start from the last index and keep updating the `goal`. In the end, `goal == 0` indicates that we find a path.
 
 
 ### C++ Solution
@@ -378,7 +376,7 @@ public:
         }
         // Store the computed result
         dp[si][pi] = ans;
-        return ans;    
+        return ans;
     }
 
     bool isMatch(string s, string p) {
@@ -461,7 +459,7 @@ public:
             dp0[i] = max(dp1[i - 1] + prices[i], dp0[i - 1]);
             dp1[i] = max(dp0[i - 2] - prices[i], dp1[i - 1]);
         }
-        return dp0[n - 1];        
+        return dp0[n - 1];
     }
 };
 ```
